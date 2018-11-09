@@ -1,0 +1,372 @@
+/** Colors **/
+
+
+/*** Primary ***/
+
+$VeryDarkBlue: hsl(243, 90%, 12%);
+$DesaturatedBlue: hsl(238, 22%, 44%);
+
+/*** Accent ***/
+
+$BrightBlue: hsl(224, 93%, 58%);
+$ModerateCyan: hsl(170, 45%, 43%);
+
+/*** Neutral ***/
+
+$LightGrayishBlue: hsl(240, 75%, 98%);
+$LightGray: hsl(0, 0%, 75%);
+body,
+html {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+    .logo {
+        flex-basis: 20%;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    .menu {
+        display: flex;
+        font-family: 'Raleway', sans-serif;
+        color: $VeryDarkBlue;
+        a {
+            text-decoration: none;
+            display: block;
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.header {
+    padding: 70px 0;
+    #illustration-1 {
+        display: block;
+        width: 80%;
+        margin: auto;
+    }
+    div {
+        padding: 0 20px;
+        margin-top: 40px;
+        text-align: center;
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            color: $VeryDarkBlue;
+        }
+        p {
+            color: $VeryDarkBlue;
+            padding: 0 15px;
+        }
+        input {
+            width: 80%;
+            height: 40px;
+            padding: 0 10px;
+            border-radius: 5px;
+            border-color: $DesaturatedBlue;
+            outline-color: $VeryDarkBlue;
+            display: block;
+            margin: auto;
+            font-family: 'Raleway', sans-serif;
+        }
+        button {
+            display: block;
+            margin: auto;
+            background-color: $BrightBlue;
+            border-color: $BrightBlue;
+            border-radius: 5px;
+            color: #fff;
+            margin-top: 20px;
+            width: 80%;
+            padding: 10px 10px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    }
+}
+
+.info {
+    #mobile-curve {
+        width: 100%;
+        display: block;
+    }
+    #desktop-curve {
+        display: none;
+    }
+    .group {
+        background-color: $LightGrayishBlue;
+        padding: 70px 0;
+        #illustration-2 {
+            display: block;
+            width: 80%;
+            margin: auto;
+        }
+        h3 {
+            text-align: center;
+            color: $VeryDarkBlue;
+        }
+        p {
+            padding: 0 20px;
+            color: $DesaturatedBlue;
+        }
+        button {
+            outline: none;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            border: none;
+            border-bottom: 1px solid $ModerateCyan;
+            color: $ModerateCyan;
+            background-color: $LightGrayishBlue;
+            padding: 10px 0;
+            font-family: 'Raleway', sans-serif;
+            span {
+                font-size: 18px;
+            }
+            #arrow {
+                width: 30px;
+                display: inline-block;
+                margin-bottom: -8px;
+            }
+        }
+        .testimonial {
+            background: #fff;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            #quotes {
+                width: 25px;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+                color: $VeryDarkBlue;
+            }
+            .person {
+                margin-top: 20px;
+                display: flex;
+                img {
+                    display: block;
+                    border-radius: 50%;
+                    width: 60px;
+                    height: 60px;
+                }
+                .details {
+                    align-self: center;
+                    margin-left: 20px;
+                    p {
+                        &:first-of-type {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.extra {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: $DesaturatedBlue;
+    color: #fff;
+    h2 {
+        font-family: 'Raleway', sans-serif;
+    }
+    input {
+        width: 80%;
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 5px;
+        display: block;
+        margin: auto;
+        font-family: 'Raleway', sans-serif;
+    }
+    button {
+        display: block;
+        margin: auto;
+        background-color: $BrightBlue;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        margin-top: 20px;
+        width: 85%;
+        padding: 10px 10px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+footer {
+    background-color: $VeryDarkBlue;
+    color: #fff;
+    padding: 70px 30px;
+    li {
+        list-style-type: none;
+        margin-top: 20px;
+    }
+    div {
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+            margin-top: 50px;
+        }
+    }
+    .contact {
+        #logo {
+            width: 50%;
+        }
+        li {
+            img {
+                margin-bottom: -5px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        padding: 30px 60px;
+        justify-content: space-between;
+        .logo {
+            img {
+                width: 50%;
+            }
+        }
+        .menu {
+            a {
+                font-size: 1.4rem;
+                margin-right: 50px;
+            }
+        }
+    }
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 70px 30px;
+        #illustration-1 {
+            width: 50%;
+            height: 50%;
+        }
+        div {
+            text-align: left;
+            h1 {
+                font-size: 2.5rem;
+            }
+            p {
+                padding: 0;
+                font-size: 1.5rem;
+            }
+            input {
+                display: inline-block;
+                margin: 0;
+                width: 50%;
+                font-size: 1.2rem;
+            }
+            button {
+                display: inline-block;
+                margin: 0;
+                width: 30%;
+                font-size: 1.2rem;
+                margin-left: 10px;
+            }
+        }
+    }
+    .info {
+        #mobile-curve {
+            display: none;
+        }
+        #desktop-curve {
+            width: 100%;
+            display: block;
+        }
+        .group {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: 70px 30px;
+            #illustration-2 {
+                // display: block;
+                width: 50%;
+                margin: auto;
+            }
+            h3 {
+                text-align: left;
+                font-size: 2rem;
+            }
+            p {
+                padding: 0;
+                padding-right: 50px;
+                font-size: 1.3rem;
+            }
+            button {
+                display: block;
+                margin: 0;
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+            .testimonial {
+                background: #fff;
+                width: 60%;
+                margin: 0;
+            }
+        }
+    }
+    .extra {
+        text-align: left;
+        display: flex;
+        padding: 70px 30px;
+        justify-content: space-around;
+        div {
+            &:nth-of-type(1) {
+                flex-basis: 40%;
+            }
+            &:nth-of-type(2) {
+                flex-basis: 50%;
+                padding-left: 50px;
+            }
+        }
+        h2 {
+            margin: 0;
+        }
+        input {
+            width: 70%;
+            display: inline-block;
+        }
+        button {
+            width: 30%;
+            margin: 0;
+            margin-top: 20px;
+            display: inline-block;
+        }
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        .contact {
+            li {
+                img {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        div {
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                margin-top: 40px;
+            }
+        }
+    }
+}
