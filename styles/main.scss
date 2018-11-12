@@ -219,18 +219,28 @@ footer {
     }
     div {
         &:nth-of-type(2),
-        &:nth-of-type(3) {
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
             margin-top: 50px;
         }
     }
     .contact {
-        #logo {
-            width: 50%;
-        }
         li {
             img {
                 margin-bottom: -5px;
                 margin-right: 20px;
+            }
+        }
+    }
+    .social {
+        text-align: center;
+        span {
+            margin-right: 15px;
+            &:last-of-type {
+                margin-right: 0;
+            }
+            i {
+                font-size: 1.5rem;
             }
         }
     }
@@ -296,8 +306,8 @@ footer {
             display: flex;
             flex-direction: row-reverse;
             padding: 70px 30px;
+            margin-top: -20px;
             #illustration-2 {
-                // display: block;
                 width: 50%;
                 margin: auto;
             }
@@ -366,6 +376,16 @@ footer {
             &:nth-of-type(2),
             &:nth-of-type(3) {
                 margin-top: 40px;
+            }
+            &:nth-of-type(4) {
+                margin-top: 60px;
+            }
+        }
+        .social {
+            span {
+                &:last-of-type {
+                    margin-right: 0;
+                }
             }
         }
     }

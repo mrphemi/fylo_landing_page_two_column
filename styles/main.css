@@ -243,17 +243,29 @@ footer li {
   margin-top: 20px;
 }
 
-footer div:nth-of-type(2), footer div:nth-of-type(3) {
+footer div:nth-of-type(2), footer div:nth-of-type(3), footer div:nth-of-type(4) {
   margin-top: 50px;
-}
-
-footer .contact #logo {
-  width: 50%;
 }
 
 footer .contact li img {
   margin-bottom: -5px;
   margin-right: 20px;
+}
+
+footer .social {
+  text-align: center;
+}
+
+footer .social span {
+  margin-right: 15px;
+}
+
+footer .social span:last-of-type {
+  margin-right: 0;
+}
+
+footer .social span i {
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -323,6 +335,7 @@ footer .contact li img {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     padding: 70px 30px;
+    margin-top: -20px;
   }
   .info .group #illustration-2 {
     width: 50%;
@@ -393,6 +406,12 @@ footer .contact li img {
   }
   footer div:nth-of-type(2), footer div:nth-of-type(3) {
     margin-top: 40px;
+  }
+  footer div:nth-of-type(4) {
+    margin-top: 60px;
+  }
+  footer .social span:last-of-type {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
